@@ -3,7 +3,7 @@ import json
 
 
 def csv_to_json():
-    df = pd.read_csv("C:\\Users\\Uzytkownik\\Desktop\\CSIT2_LearningFromData\\Data\\movies.csv", sep=";")
+    df = pd.read_csv("Data\\movies.csv", sep=";")
     df.columns = ["order", "ID", "Title"]
     df = df.drop(["order"], axis=1)
 
